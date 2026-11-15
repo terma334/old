@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkei</title>
+
+<link rel="stylesheet" href="https://terma334.github.io/journeys/style.css">
+
+</head>
+<body>
+<div id="menuButton" onclick="toggleMenu()">
+    ☰
+</div>
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="nav-tage">
+       
+        <a href="#Tag0" onclick="toggleMenu()">Türkei</a><br>
+        <a href="#Tag1" onclick="toggleMenu()">Hotel</a>
+        <a href="#Tag2" onclick="toggleMenu()">Side & Basar Manavgat</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section id="Tag0"><center>
+            <p class="tag">Türkei</p>
+            <p>06. Oktober 2024 - 13. Oktober 2024</p>
+            <p><img src="pictures/flag.png" width="70%">
+            <p><img src="pictures/map.jpg" width="70%"></center>
+        </section>
+    <hr>
+        <section id="Tag1">
+            <p class="tag">Hotel</p>
+            <p><div class="galerie" id="galerie1"></div></p>
+        </section>
+    <hr>
+        <section id="Tag2">
+            <p class="tag">Side & Basar Manavgat</p>
+            <p><div class="galerie" id="galerie2"></div></p>
+        </section>
+
+</main>
+<div id="lightbox">
+
+    <span class="schliessen" onclick="closeLightbox()">&times;</span>
+
+    <span class="pfeil links" onclick="prevImage()">&#10094;</span>
+
+<div class="lightbox-inhalt">
+
+    <img id="grossesBild" style="display:none;">
+
+    <video id="grossesVideo"
+           controls
+           style="display:none; max-width:90vw; max-height:85vh;">
+    </video>
+
+    <div id="videoOverlay" onclick="videoStarten()">
+    ▶
+    </div>
+
+    <p id="bildBeschreibung"></p>
+
+</div>
+
+    <span class="pfeil rechts" onclick="nextImage()">&#10095;</span>
+
+</div>
+
+<script src="https://terma334.github.io/journeys/lightboxscript.js"></script>
+<script src="galerie.js"></script>
+<script src="https://terma334.github.io/journeys/script.js"></script>
+<script src="https://terma334.github.io/journeys/reisen-navigation.js"></script>
+
+</body>
+</html>
