@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holland</title>
+
+<link rel="stylesheet" href="https://terma334.github.io/journeys/style.css">
+
+</head>
+<body>
+<div id="menuButton" onclick="toggleMenu()">
+    ☰
+</div>
+<nav id="nav">
+
+    <div class="nav-oben">
+        <details class="reisen-dropdown">
+            <summary>Alle Reisen</summary>
+            <div class="reisen-untermenue" id="reisen-links"></div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="nav-tage">
+       
+        <a href="#Tag0" onclick="toggleMenu()">Holland</a><br>
+        <a href="#Tag1" onclick="toggleMenu()">Köln</a>
+        <a href="#Tag2" onclick="toggleMenu()">Batavia</a>
+        <a href="#Tag3" onclick="toggleMenu()">Festung Naarden</a>
+        <a href="#Tag4" onclick="toggleMenu()">Amsterdam</a>
+        <a href="#Tag5" onclick="toggleMenu()">Pampus & Muiderslot</a>
+        <a href="#Tag6" onclick="toggleMenu()">Texel</a>
+        <a href="#Tag7" onclick="toggleMenu()">Marinemuseum Den Helder</a>
+        <a href="#Tag8" onclick="toggleMenu()">Arnheim</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section id="Tag0"><center>
+            <p class="tag">Holland</p>
+            <p>30. April 2024 - 06. Juni 2024</p>
+            <p><img src="pictures/flag.png" width="70%">
+            <p><img src="pictures/map.jpg" width="70%"></center>
+        </section>
+    <hr>
+        <section id="Tag1">
+            <p class="tag">Köln</p>
+            <p><div class="galerie" id="galerie1"></div></p>
+        </section>
+    <hr>
+        <section id="Tag2">
+            <p class="tag">Batavia</p>
+            <p><div class="galerie" id="galerie2"></div></p>
+        </section>
+    <hr>
+        <section id="Tag3">
+            <p class="tag">Festung Naarden</p>
+            <p><div class="galerie" id="galerie3"></div></p>
+        </section>
+    <hr>
+        <section id="Tag4">
+            <p class="tag">Amsterdam</p>
+            <p><div class="galerie" id="galerie4"></div></p>
+        </section>
+    <hr>
+        <section id="Tag5">
+            <p class="tag">Fort Pampus & Kastell Muiderslot</p>
+            <p><div class="galerie" id="galerie5"></div></p>
+        </section>
+    <hr>
+        <section id="Tag6">
+            <p class="tag">Texel</p>
+            <p><div class="galerie" id="galerie6"></div></p>
+        </section>
+    <hr>
+        <section id="Tag7">
+            <p class="tag">Marinemuseum Den Helder</p>
+            <p><div class="galerie" id="galerie7"></div></p>
+        </section>
+    <hr>
+        <section id="Tag8">
+            <p class="tag">Arnheim</p>
+            <p><div class="galerie" id="galerie8"></div></p>
+        </section>
+
+</main>
+<div id="lightbox">
+
+    <span class="schliessen" onclick="closeLightbox()">&times;</span>
+
+    <span class="pfeil links" onclick="prevImage()">&#10094;</span>
+
+<div class="lightbox-inhalt">
+
+    <img id="grossesBild" style="display:none;">
+
+    <video id="grossesVideo"
+           controls
+           style="display:none; max-width:90vw; max-height:85vh;">
+    </video>
+
+    <div id="videoOverlay" onclick="videoStarten()">
+    ▶
+    </div>
+
+    <p id="bildBeschreibung"></p>
+
+</div>
+
+    <span class="pfeil rechts" onclick="nextImage()">&#10095;</span>
+
+</div>
+
+<script src="https://terma334.github.io/journeys/lightboxscript.js"></script>
+<script src="galerie.js"></script>
+<script src="https://terma334.github.io/journeys/script.js"></script>
+<script src="https://terma334.github.io/journeys/reisen-navigation.js"></script>
+
+</body>
+</html>
